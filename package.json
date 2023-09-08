@@ -1,17 +1,17 @@
 {
-  "name": "tailwind-test",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "build:css": "npx tailwindcss -i ./public/input.css -o ./dist/output.css --watch"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "tailwindcss": "^3.3.3"
-  },
-  "dependencies": {
-    "live-server": "^1.2.2"
-  }
+    "name": "tailwind-test",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build:css": "npx tailwindcss -i ./public/input.css -o ./dist/output.css --watch --minify"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "tailwindcss": "^3.3.3"
+    },
+    "dependencies": {
+        "live-server": "^1.2.2"
+    }
 }
