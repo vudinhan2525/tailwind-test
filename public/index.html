@@ -3,22 +3,25 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-        <link href="/dist/output.css" rel="stylesheet" />
+        <link rel="icon" type="image/x-icon" href="./img/favicon.svg" />
+        <title>Coffee Shop</title>
+        <link href="../dist/output.css" rel="stylesheet" />
+        <script type="text/javascript" async src="./js/header.js"></script>
     </head>
     <body>
         <div id="root">
             <div
-                class="content-section max-w-[1320px] text-base m-auto bg-slate-300"
+                class="content-section max-w-[1320px] text-base m-auto bg-slate-300 font-Karia"
             >
-                <header class="flex py-6 justify-between items-center">
+                <header class="flex py-6 justify-between items-center relative">
                     <div
                         class="logo basis-2/6 text-center text-xl font-semibold cursor-pointer"
                     >
                         CoffeeStyle.
                     </div>
                     <ul
-                        class="flex basis-3/6 justify-start gap-x-8 uppercase text-sm text-gray-500 font-medium items-center"
+                        id="ct-menu-list"
+                        class="basis-3/6 hidden lg:flex lg:justify-start lg:gap-x-8 lg:items-center uppercase text-sm text-gray-500 font-medium"
                     >
                         <li class="ct-nav-item">
                             <a href="#">Home</a>
@@ -39,7 +42,9 @@
                             <a href="#">Styleguide</a>
                         </li>
                     </ul>
-                    <div class="basis-1/6 flex items-center">
+                    <div
+                        class="flex items-center basis-4/6 justify-end lg:basis-1/6 lg:justify-start"
+                    >
                         <li
                             class="inline-flex items-center ct-nav-item uppercase text-sm text-gray-500 font-medium cursor-pointer"
                         >
@@ -65,8 +70,24 @@
                                 10
                             </div>
                         </li>
+                        <svg
+                            id="ct-menu-btn"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="w-5 h-5 block mx-6 visible lg:hidden cursor-pointer"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"
+                            />
+                        </svg>
                     </div>
                 </header>
+                <div class="h-[1000px]"></div>
             </div>
         </div>
     </body>
