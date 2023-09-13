@@ -11,8 +11,9 @@
     <body>
         <div id="root">
             <div
-                class="content-section max-w-[1320px] text-base m-auto font-Karia"
+                class="content-section max-w-[1320px] px-4 text-base m-auto font-Karia"
             >
+                <!-- Nav bar -->
                 <header class="flex py-6 justify-between items-center relative">
                     <div
                         class="logo basis-2/6 text-center text-xl font-semibold cursor-pointer"
@@ -87,34 +88,82 @@
                         </svg>
                     </div>
                 </header>
-                <div class="px-4">
+                <!-- Slider -->
+                <div
+                    class="h-[600px] bg-[url('../public/img/slider-bg.jpeg')] bg-no-repeat bg-cover bg-bottom"
+                >
                     <div
-                        class="h-[600px] bg-[url('../public/img/slider-bg.jpeg')] bg-no-repeat bg-cover bg-bottom"
+                        class="relative w-full h-full flex bg-gray-900 bg-opacity-40"
                     >
                         <div
-                            class="relative w-full h-full flex bg-gray-900 bg-opacity-40"
+                            class="absolute top-[50%] translate-y-[-50%] mx-auto w-full px-20 text-white text-center flex flex-col items-center"
                         >
-                            <div
-                                class="absolute top-[50%] translate-y-[-50%] mx-auto w-full px-20 text-white text-center flex flex-col items-center"
+                            <h1 class="text-lg mb-4">
+                                BEST PLACE TO BUY COFFEE
+                            </h1>
+                            <h4 class="text-5xl font-medium mb-4">
+                                Coffee Mugs
+                            </h4>
+                            <h1 class="text-lg font-medium mb-4">
+                                The most versatile furniture system ever
+                                created. Designed to fit your life, made to move
+                                and grow.
+                            </h1>
+                            <button
+                                class="text-black text-[14px] font-medium py-4 bg-white px-6 hover:opacity-95"
                             >
-                                <h1 class="text-lg mb-4">
-                                    BEST PLACE TO BUY COFFEE
-                                </h1>
-                                <h4 class="text-5xl font-medium mb-4">
-                                    Coffee Mugs
-                                </h4>
-                                <h1 class="text-lg font-medium mb-4">
-                                    The most versatile furniture system ever
-                                    created. Designed to fit your life, made to
-                                    move and grow.
-                                </h1>
-                                <button
-                                    class="text-black text-[14px] font-medium py-4 bg-white px-6 hover:opacity-95"
+                                EXPLORE OUR PRODUCTS
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Content section -->
+                <div class="px-6">
+                    <div class="relative flex items-center justify-center">
+                        <div class="ct-before-sub-heading"></div>
+                        <div class="ct-sub-heading mx-5">OUR COFFEE STORY</div>
+                        <div class="ct-before-sub-heading"></div>
+                    </div>
+                    <!-- Coffee story -->
+                    <div
+                        class="lg:flex lg:items-center lg:w-[65%] lg:mx-auto lg:gap-4 justify-center"
+                    >
+                        <div class="lg:basis-1/2">
+                            <video
+                                src="./video/video (2160p).mp4"
+                                autoplay
+                                loop
+                                class="object-cover object-center w-full h-full min-h-[320px]"
+                            ></video>
+                        </div>
+                        <div
+                            class="lg:basis-1/2 text-center lg:text-start lg:pl-4"
+                        >
+                            <h5 class="text-3xl mb-4 max-lg:mt-4">
+                                What is your most special coffee?
+                            </h5>
+                            <p class="text-gray-700 mb-4">
+                                The French Press is a brewing method that comes
+                                closest to cupping. Cupping is the prescribed
+                                method by which coffee should be judged. Nothing
+                                separates the water from the coffee. To properly
+                                discover the flavours, it is best to drink the
+                                coffee this way. Everyone has their favourite
+                                brewing method.
+                            </p>
+                            <div>
+                                <div
+                                    class="m-auto inline-block py-1 text-primary-color cursor-pointer border-b-2 border-solid border-primary-color hover:border-[#7a6039] hover:text-[#7a6039]"
                                 >
-                                    EXPLORE OUR PRODUCTS
-                                </button>
+                                    Read the full Story
+                                </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="relative flex items-center justify-center">
+                        <div class="ct-before-sub-heading"></div>
+                        <div class="ct-sub-heading mx-5">FEATURED MUGS</div>
+                        <div class="ct-before-sub-heading"></div>
                     </div>
                 </div>
             </div>

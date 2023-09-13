@@ -4,7 +4,7 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                'primary-color': '#C89F94',
+                'primary-color': '#a48349',
             },
             fontFamily: {
                 Karia: ['Karla', 'sans-serif'],
